@@ -4,7 +4,7 @@
 
 [Web4 Link](https://in-info-web4.luddy.indianapolis.iu.edu/~hhamelin/Y4/FA25/N315/homework04)
 
-Simple 5 page website to showcase basic username checking with custom alerts. 
+Simple website to showcase basic username checking with custom alerts. 
 
 To develop for this site you do need to install scss.
 
