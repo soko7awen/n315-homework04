@@ -1,0 +1,82 @@
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    opacity: 0;
+    background-color: #f44336;
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    will-change: transform, opacity
+}
+
+.toast.show {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+.toast.hide {
+    transform: translate(-50%, 150%);
+    opacity: 0;
+}
+
+#alertHolder {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(114, 114, 114, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alertHolder .alert-callout-out {
+    position: relative;
+    max-width: 30%;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#alertHolder .x-close-alert {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#alertHolder .button-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#alertHolder .btn-confirm {
+    padding: 10px 30px;
+    background-color: #8069db;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#alertHolder .btn-cancel {
+    padding: 10px 30px;
+    background-color: #db6e6e;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

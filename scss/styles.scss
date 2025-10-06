@@ -1,0 +1,157 @@
+@use "reset";
+@use "structure";
+@use "nav";
+
+
+body {
+    background:#150720;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home {
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    form input,
+    form button,
+    form textarea {
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+}
+
+
+.main {
+    display: flex;
+    width: 1200px;
+    max-width: 98vw;
+    min-height: 800px;
+    padding: 40px 25px 20px 25px;
+    margin: 0 auto;
+    background-color: #C6C6C6
+}
+
+.part {
+    background-color: #EEEEEE;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+
+    h1 {
+        margin: 25px;
+        font-size: 42px;
+        padding-bottom: 10px;
+        border-bottom: solid #404040 1px;
+    }
+}
+
+.frontpage {
+    width: 100%;
+    min-height: 700px;
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+.post {
+    width: 770px;
+    height: max-content;
+    padding: 20px;
+    margin: 0 0px 20px 25px;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+        font-size: large;
+        font-weight: bold;
+        color: #333333;
+    }
+}
+
+.comic {
+    display: flex;
+    width: 770px;
+    height: max-content;
+    padding: 20px;
+    margin: 0 0px 30px 25px;
+
+    img {
+        width: 150px;
+    }
+
+    .text {
+        margin-left: 15px;
+    }
+}
+
+aside.sidebar {
+    flex-grow: 1;
+    padding: 0 0 20px 30px;
+
+    .entry {
+        margin-bottom: 40px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .search {
+            display: flex;
+
+            input {
+                width: 230px;
+                margin: 20px 0 20px 20px;
+            }
+
+            img {
+                height: 50px;
+                margin-left: 10px;
+                align-self: center;
+            }
+        }
+    }
+
+    .entry.short {
+        height: 80px;
+    }
+    .entry.medium {
+        height: 210px;
+    }
+    .entry.tall {
+        height: 350px;
+    }
+}
+
+.home .frontpage img:first-of-type {
+    margin-top: 50px;
+}
+
+.community .post:first-of-type {
+    height: auto;
+}
+
+.image-gallery {
+  padding-bottom: 10px;
+}
+
+.image-gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  justify-content: center;
+}
+
+.image-gallery .row .column {
+  display: flex;
+  flex: 32%;
+  max-width: 32%;
+  flex-direction: column;
+  row-gap: 10px;
+}

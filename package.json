@@ -1,0 +1,26 @@
+{
+  "name": "n315-homework3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "sass scss/:css/ -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soko7awen/n315-homework03.git"
+  },
+  "author": "soko7awen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soko7awen/n315-homework03/issues"
+  },
+  "homepage": "https://github.com/soko7awen/n315-homework03#readme",
+  "devDependencies": {
+    "sass": "^1.93.0"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.23.0"
+  }
+}

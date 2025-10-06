@@ -1,0 +1,258 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --footer-header-color: #b2b2b2;
+}
+
+.content {
+  margin: 20px auto;
+}
+
+footer {
+  width: 1200px;
+  max-width: 98vw;
+  min-height: 250px;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 20px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.62);
+  color: #d2d2d2;
+}
+footer h3 {
+  padding-bottom: 10px;
+  border-bottom: solid var(--footer-header-color) 1px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: var(--footer-header-color);
+}
+footer p {
+  font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  width: 1200px;
+  height: 80px;
+  border-radius: 30px 30px 0 0;
+  margin: 40px auto 0 auto;
+  background-color: #440344;
+  padding: 0;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: x-large;
+  color: #cae3f4;
+}
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #150720;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.home form input,
+.home form button,
+.home form textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.main {
+  display: flex;
+  width: 1200px;
+  max-width: 98vw;
+  min-height: 800px;
+  padding: 40px 25px 20px 25px;
+  margin: 0 auto;
+  background-color: #C6C6C6;
+}
+
+.part {
+  background-color: #EEEEEE;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.part h1 {
+  margin: 25px;
+  font-size: 42px;
+  padding-bottom: 10px;
+  border-bottom: solid #404040 1px;
+}
+
+.frontpage {
+  width: 100%;
+  min-height: 700px;
+}
+.frontpage h1 {
+  text-align: center;
+}
+
+.post {
+  width: 770px;
+  height: max-content;
+  padding: 20px;
+  margin: 0 0px 20px 25px;
+}
+.post img {
+  margin-bottom: 20px;
+}
+.post p {
+  font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: large;
+  font-weight: bold;
+  color: #333333;
+}
+
+.comic {
+  display: flex;
+  width: 770px;
+  height: max-content;
+  padding: 20px;
+  margin: 0 0px 30px 25px;
+}
+.comic img {
+  width: 150px;
+}
+.comic .text {
+  margin-left: 15px;
+}
+
+aside.sidebar {
+  flex-grow: 1;
+  padding: 0 0 20px 30px;
+}
+aside.sidebar .entry {
+  margin-bottom: 40px;
+}
+aside.sidebar .entry:last-of-type {
+  margin-bottom: 0;
+}
+aside.sidebar .entry .search {
+  display: flex;
+}
+aside.sidebar .entry .search input {
+  width: 230px;
+  margin: 20px 0 20px 20px;
+}
+aside.sidebar .entry .search img {
+  height: 50px;
+  margin-left: 10px;
+  align-self: center;
+}
+aside.sidebar .entry.short {
+  height: 80px;
+}
+aside.sidebar .entry.medium {
+  height: 210px;
+}
+aside.sidebar .entry.tall {
+  height: 350px;
+}
+
+.home .frontpage img:first-of-type {
+  margin-top: 50px;
+}
+
+.community .post:first-of-type {
+  height: auto;
+}
+
+.image-gallery {
+  padding-bottom: 10px;
+}
+
+.image-gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  justify-content: center;
+}
+
+.image-gallery .row .column {
+  display: flex;
+  flex: 32%;
+  max-width: 32%;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
